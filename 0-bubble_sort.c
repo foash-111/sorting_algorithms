@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "sort.h"
 
 /**
  * _swap - swap between 2 integers
@@ -40,6 +40,4 @@ void bubble_sort(int *array, size_t size)
 		if (flag == 0)
 		break;
 	}
-
-
 }
