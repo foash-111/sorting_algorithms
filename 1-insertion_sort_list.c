@@ -56,7 +56,7 @@ void insertion_sort_list(listint_t **list)
 	listint_t *current = *list;
 	int key = 0, flag = 0;
 
-	if (head == NULL || head->next == NULL)
+	if (list == NULL || head == NULL || head->next == NULL)
 	return;
 	if (head != NULL)
 	head = head->next;
