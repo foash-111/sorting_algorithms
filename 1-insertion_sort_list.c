@@ -52,12 +52,16 @@ void swap_nodes(listint_t *first_node, listint_t *second_node)
 
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *head = *list;
-	listint_t *current = *list;
+	listint_t *head = NULL;
+	listint_t *current = NULL;
 	int key = 0, flag = 0;
 
-	if (list == NULL || head == NULL || head->next == NULL)
+	if (list == NULL || *list == NULL || head->next == NULL)
 	return;
+
+	head = *list;
+	current = *list;
+
 	if (head != NULL)
 	head = head->next;
 
